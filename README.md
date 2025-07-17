@@ -2,6 +2,8 @@
 
 🌐 **Live Demo**: [https://prepgenius-ai-interview-prep-by-ash.vercel.app/](https://prepgenius-ai-interview-prep-by-ash.vercel.app/)
 
+🎥 **Video Preview:** [Watch Demo](https://github.com/user-attachments/assets/acddf554-c5be-429e-99ce-815d3f8e68df)
+
 **PrepGenius** is a cutting-edge AI-powered interview preparation platform built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js) and seamlessly integrated with the **Gemini API**. It generates personalized, role-specific interview questions along with intelligent explanations and note-taking capabilities — all designed to help candidates prepare effectively for their dream roles.
 
 
