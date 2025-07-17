@@ -21,6 +21,7 @@ Secure user registration and login.
 
 ### 🆕 New Session  
 <img width="1897" height="916" alt="Screenshot 2025-07-17 130246" src="https://github.com/user-attachments/assets/7c788056-8790-411e-8c17-64ecf8c2477f" />
+<img width="1919" height="876" alt="image" src="https://github.com/user-attachments/assets/f9a4d84d-729e-4990-b2e0-baeac4a7be9e" />
 Start a new AI-powered interview question session.
 
 ### ❓ Question Generation  
