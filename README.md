@@ -1,6 +1,9 @@
 # 🚀 PrepGenius – AI-Powered Interview Preparation Website
 
-🌐 **Live Demo**: [https://prepgenius-ai-interview-prep-by-ash.vercel.app/](https://prepgenius-ai-interview-prep-by-ash.vercel.app/)
+🌐 **Live Demo**: 
+Frontend[https://prepgenius-ai-interview-prep-by-ash.vercel.app/](https://prepgenius-ai-interview-prep-by-ash.vercel.app/)
+Backend https://prepgenius-interview-prep-ai.onrender.com/
+
 
 🎥 **Video Preview:** [Watch Demo](https://github.com/user-attachments/assets/acddf554-c5be-429e-99ce-815d3f8e68df)
 
