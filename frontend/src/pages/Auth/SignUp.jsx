@@ -16,7 +16,9 @@ const SignUp = ({ setCurrentPage }) => {
   const { updateUser } = useContext(UserContext);
   const navigate = useNavigate();
 
-  const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const validateEmail = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
 
   const handleSignup = async (e) => {
     e.preventDefault();
@@ -32,7 +34,7 @@ const SignUp = ({ setCurrentPage }) => {
         name,
         email,
         password,
-        profileImageUrl: "" // ✅ fixed key (was profileimageUrl)
+        profileimageUrl: "" // Since we're not uploading an image
       });
 
       toast.success("Account created successfully");
@@ -56,6 +58,7 @@ const SignUp = ({ setCurrentPage }) => {
     <div className='w-full max-w-md p-6 bg-white rounded-lg shadow-md'>
       <h2 className='text-2xl font-bold mb-6 text-gray-800'>Create Account</h2>
       <form onSubmit={handleSignup} className='space-y-4'>
+
         {/* Full Name */}
         <div>
           <label className="text-sm text-black font-medium">Full Name</label>

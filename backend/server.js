@@ -13,20 +13,10 @@ const { generateInterviewQuestions, generateConceptExplanation } = require("./co
 
 const app = express();
 
-app.use(cors({
-  origin: [
-    "https://prepgenius.app",                        // your main frontend
-    "https://prepgenius-ai-interview-prep-by-ash.vercel.app", // old/vercel preview
-    "http://localhost:5173"                          // local dev
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));
-
-
-
-app.use(compression());
-app.use(express.json({ limit: "10kb" }));
+// Middleware
+app.use(cors({ origin: "*", methods: ["GET", "PUT", "POST", "DELETE"] }));
+app.use(compression()); // ✅ Faster responses
+app.use(express.json({ limit: "10kb" })); // Limit payload size for speed
 
 // DB Connection
 connectDB();
@@ -46,4 +36,3 @@ const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
-

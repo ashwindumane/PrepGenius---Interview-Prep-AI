@@ -23,7 +23,7 @@ router.post("/upload-image", upload.single("image"), async (req, res) => {
     }
 
     const imageUrl = `${req.protocol}://${req.get("host")}/uploads/${file.filename}`;
-    res.status(200).json({ url: imageUrl });
+    res.status(200).json({ imageUrl });
   } catch (error) {
     res.status(500).json({ message: "Server error", error });
   }
