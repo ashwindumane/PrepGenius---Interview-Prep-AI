@@ -13,12 +13,17 @@ const { generateInterviewQuestions, generateConceptExplanation } = require("./co
 
 const app = express();
 
-// ✅ CORS - allow only your frontend domain
 app.use(cors({
-  origin: ["https://prepgenius-ai-interview-prep-by-ash.vercel.app"],
+  origin: [
+    "https://prepgenius.app",                        // your main frontend
+    "https://prepgenius-ai-interview-prep-by-ash.vercel.app", // old/vercel preview
+    "http://localhost:5173"                          // local dev
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
+
+
 
 app.use(compression());
 app.use(express.json({ limit: "10kb" }));
@@ -41,3 +46,4 @@ const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
+
